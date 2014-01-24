@@ -1,0 +1,6 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+#destination: zpl1025.github.co
+timezone: Asia/Hong_Kong
+encoding: UTF-8
