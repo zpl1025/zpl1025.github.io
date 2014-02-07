@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"{% if page.invert %} class="invert"{% endif %}>
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title }} › {% endif %}{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
+	<meta name="author" content="{{ site.name }}">
+	<link rel="stylesheet" href="/assets/css/normalize.css">
+	<link rel="stylesheet" href="/assets/css/screen.css">
+	<link rel="icon" href="/favicon.png" type="image/png">
+	<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="Atom">
+</head>
+<body>
+	<header>
+		<a href="/"><img src="/assets/img/logo.png" alt="ESWAT logo" height="36" width="98"></a>
+		<nav>
+			<ul>
+				<li{% if page.title == 'Compact eXploder' %} class="selected"{% endif %}><a href="/cx/">CX</a></li>
+				<li{% if page.title == 'About' %} class="selected"{% endif %}><a rel="author" href="/about/">About</a></li>
+				<li{% if page.title == 'Journal' or page.type == 'journal' %} class="selected"{% endif %}><a rel="archives" href="/journal/">Journal</a></li>
+			</ul>
+			<ul>
+				<li><a rel="author" href="mailto:{{ site.email }}">Email</a></li>
+				<li><a rel="external" href="http://github.com/{{ site.github }}">GitHub</a></li>
+				<li><a rel="external" href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		{{ content }}
+	</section>
+</body>
+</html>

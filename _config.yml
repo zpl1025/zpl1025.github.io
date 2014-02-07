@@ -1,6 +1,14 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
-#destination: zpl1025.github.co
+name: zpl''s Jekyll Site
+prt: 3000
+pygments: false
+lsi: false
+permalink: /:year/:month/:day/:title.html
+# paginate: 50
+markdown: rdiscount
+# enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
+rdiscount:
+  extensions: [smart]
+# Since GH pages override this to "true", we test this value to see if we are running locally
+safe: false
 timezone: Asia/Hong_Kong
 encoding: UTF-8
