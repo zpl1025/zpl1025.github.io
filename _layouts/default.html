@@ -74,10 +74,13 @@
     <div id="fb-root"></div><script></script-->
     <iframe id="sidebar"></iframe>
     <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/">ZPL's Room</a></h1>
+      <!-- h1 class="logo" font-family="helvetica, sans-serif" onclick="document.location.href='/';"><a>ZPL</a></h1 -->
+      <h1 class="logo" font-family="helvetica, sans-serif"><a>ZPL</a></h1>
       <ul class="navigation">
+        <li><a href="/" title="home page">Home</a></li>
         <li><a href="/photos/"{% if page.url contains "/photos/" %}class="active"{% endif %} title="A selection of recent photography">Photography</a></li>
         <li><a href="/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
+        <li><a href="http://github.com/zpl1025" title="my github page">Github</a></li>
         <!-- li><a href="/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li -->
       </ul>
     </header>
@@ -99,11 +102,9 @@
     
     {% unless page.no_footer %}
     <footer textsize=10>
-      <p>
+      <p>Based on <a href="http://rsms.me">rsms's work</a> which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
         <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
 <img src="/res/cc-by.png" class="cc"></a>
-        This is based on <a href="http://rsms.me">rsms's work</a> which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a><br />
-         <a href="http://github.com/zpl1025">GitHub®</a>
       </p>
     </footer>
     {% endunless %}

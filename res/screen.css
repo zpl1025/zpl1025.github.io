@@ -1,7 +1,7 @@
 @viewport {
   width: device-width;
 }
-@font-face {
+/*@font-face {
   font-family: 'M+ 1mn';
   font-style: normal;
   font-weight: 300;
@@ -14,14 +14,14 @@
   font-weight: 500;
   src: local('mplus-1mn-regular'), local('M+ 1mn regular'), url('/res/mplus-1mn-regular.ttf')
        format('truetype');
-}
+}*/
 
 /* Base */
 * { margin:0; padding:0; font-family:inherit; }
 body {
   background:#ddd;
   color:#444;
-  font:14px 'Poly', georgia, serif;
+  font:14px 'tahoma';
   line-height:1.5;
   font-weight: lighter;
   margin: 0 auto;
@@ -38,7 +38,8 @@ div.breaker { clear:both; }
 p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
 pre, code, tt {
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: 'M+ 1mn', 'Consolas', monospace;
+  /*font-family: 'M+ 1mn', 'Consolas', monospace;*/
+  font-family: 'Lucida Console', 'Consolas', monospace;
   font-weight:300;
   font-size: 12px;
 }
@@ -47,7 +48,7 @@ strong { font-weight:bold; }
 hr { height:1px; border:none; background-color:#ddd; }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Poly', helvetica, sans-serif;
+  font-family: helvetica, sans-serif;
   font-weight:normal;
   color:#040404;
   margin: 1.618em 0 1em 0;
@@ -331,6 +332,7 @@ a.post-excerpt {
 
   a.post-excerpt div.title {
     font-weight: bold;
+    color:#923;
   }
 
   a.post-excerpt info {
@@ -1366,7 +1368,9 @@ footer {
 /* medium-res devices (e.g. ipad, but not iphone) */
 #sidebar { display:none; }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body { zoom: 1; width:100%; font-family: 'Poly', georgia; }
+  body { zoom: 1; width:100%; 
+  font-family: 'Poly', georgia; 
+  }
 }
 
 /* devices like laptops and regular computers (including ipad but not
