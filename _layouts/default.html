@@ -52,6 +52,7 @@
     {% if page.include_move %}
     <script src="http://movelang.org/move.js"></script>
     {% endif %}
+    {% include analytics.html %}
   </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
     <!--script>/*
@@ -110,6 +111,5 @@
     {% endunless %}
     
     {% include prettify.html %}
-    {% include analytics.html %}
   </body>
 </html>
